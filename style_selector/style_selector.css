@@ -1,0 +1,203 @@
+body
+{
+	overflow-x: hidden;
+}
+.style_selector 
+{
+    position: fixed;
+	right: 0;
+    top: 10%;
+	width: 45px;
+    z-index: 10;
+}
+.style_selector.opened
+{
+	width: 246px;
+}
+.style_selector.opened .style_selector_content
+{
+	display: block;
+	width: 200px;
+}
+.style_selector_icon
+{
+	float: left;
+	background: url("images/config.png") no-repeat scroll center center rgba(0, 0, 0, 0.5);
+	cursor: pointer;
+    display: block;
+	width: 45px;
+    height: 45px;
+}
+.style_selector_content
+{
+	float: left;
+	width: 0;
+	display: none;
+	background: #FFF;
+	box-shadow: 0px 6px 8px 0px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0px 6px 8px 0px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 0px 6px 8px 0px rgba(0,0,0,0.1);
+	border-left: 1px solid rgba(0,0,0,0.1);
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.style_selector_content h4
+{
+	font-family: 'Roboto';
+	font-size: 16px;
+	color: #25282A;
+	background: #F0F0F0;
+	padding-top: 10px;
+	padding-bottom: 12px;
+	text-align: center;
+}
+.style_selector_content ul li
+{
+	border-top: 1px solid #E9E9E9;
+	padding: 10px 15px;
+}
+.style_selector_content ul li:first-child
+{
+	border-top: none;
+}
+.style_selector_content ul li label
+{	
+	display: block;
+	font-family: 'Arial';
+	font-size: 12px;
+	color: #7C7C7C;
+}
+.style_selector_content ul li select
+{
+	width: 170px;
+	font-size: 14px;
+	color: #3E3E3E;
+	border: 1px solid #E9E9E9;
+	padding: 7px 10px;
+	margin-top: 10px;
+	box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.03); 
+	-moz-box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.03); 
+	-webkit-box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.03);
+}
+.style_selector_content ul.layout_chooser
+{
+	clear: both;
+}
+.style_selector_content ul.layout_chooser li
+{
+	float: left;
+	border: none;
+	padding: 0;
+	margin-left: 5px;
+	margin-top: 5px;
+}
+.style_selector_content ul.layout_chooser li:first-child,
+.style_selector_content ul.layout_chooser li.first
+{
+	margin-left: 0;
+}
+.style_selector_content ul.layout_chooser li a
+{
+	display: block;
+	width: 23px;
+	height: 23px;
+	padding-top: 7px;
+	padding-left: 7px;
+	text-align: center;
+}
+.style_selector_content ul.layout_chooser li a.pattern_1
+{
+	background: url("images/pattern_1.png");
+}
+.style_selector_content ul.layout_chooser li a.pattern_2
+{
+	background: url("images/pattern_2.png");
+}
+.style_selector_content ul.layout_chooser li a.pattern_3
+{
+	background: url("images/pattern_3.png");
+}
+.style_selector_content ul.layout_chooser li a.pattern_4
+{
+	background: url("images/pattern_4.png");
+}
+.style_selector_content ul.layout_chooser li a.pattern_5
+{
+	background: url("images/pattern_5.png");
+}
+.style_selector_content ul.layout_chooser li a.pattern_6
+{
+	background: url("images/pattern_6.png");
+}
+.style_selector_content ul.layout_chooser li a.pattern_7
+{
+	background: url("images/pattern_7.png");
+}
+.style_selector_content ul.layout_chooser li a.pattern_8
+{
+	background: url("images/pattern_8.png");
+}
+.style_selector_content ul.layout_chooser li a.pattern_9
+{
+	background: url("images/pattern_9.png");
+}
+.style_selector_content ul.layout_chooser li a.pattern_10
+{
+	background: url("images/pattern_10.png");
+}
+.style_selector_content ul.layout_chooser li a.image_1
+{
+	background: url("images/image_1.png");
+}
+.style_selector_content ul.layout_chooser li a.image_2
+{
+	background: url("images/image_2.png");
+}
+.style_selector_content ul.layout_chooser li a.image_3
+{
+	background: url("images/image_3.png");
+}
+.style_selector_content ul.layout_chooser li a.image_4
+{
+	background: url("images/image_4.png");
+}
+.style_selector_content ul.layout_chooser li a.image_5
+{
+	background: url("images/image_5.png");
+}
+.style_selector_content ul.layout_chooser li a:hover
+{
+	text-decoration: none;
+}
+.style_selector_content ul.layout_chooser li a .tick
+{
+	display: none;
+	width: 16px;
+	height: 16px;
+	background: #ED1C24 url("images/tick.png") no-repeat center center;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+}
+.style_selector_content ul.layout_chooser li a:hover .tick,
+.style_selector_content ul.layout_chooser li.selected a .tick
+{
+	display: block;
+}
+.style_selector_content ul.layout_chooser #overlay
+{
+	margin: 5px 0 0;
+}
+.style_selector_content ul.layout_chooser .overlay_label
+{
+	float: right;
+	margin-left: 5px;
+	margin-top: 6px;
+	cursor: pointer;
+}
+@media screen and (max-width:767px)
+{
+	.hide_on_mobile
+	{
+		display: none;
+	}
+}
